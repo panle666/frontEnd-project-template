@@ -1,0 +1,148 @@
+.address-item {
+  display: flex;
+  align-items: center;
+  height: 1rem;
+  position: relative;
+  padding: 0 0.3rem;
+  border-top: 1px solid #f0f0f0;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+  }
+
+  .label {
+    font-size: .28rem;
+    flex-shrink: 0;
+  }
+
+  input {
+    height: 1rem;
+    flex: 1;
+  }
+}
+
+.input-close {
+  display: block;
+  width: 0.46rem;
+  height: 1rem;
+  line-height: 1rem;
+  float: left;
+  background: #fff url('./images/close.png') no-repeat right center;
+  background-size: 0.2rem 0.2rem;
+}
+
+.picker {
+  width: 5.38rem;
+  height: 1rem;
+  // line-height: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  font-size: 0.28rem;
+  float: left;
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.28rem;
+  padding-right: 0.14rem;
+  box-sizing: border-box;
+  background: url('~@/static/images/orderconfirm_jt.png') right center no-repeat;
+  background-size: 0.14rem 0.23rem;
+
+  .selectText {
+    // height: 0.28rem;
+    // font-size: 0.28rem;
+    // line-height: 100%;
+    // overflow: hidden;
+    // display: -webkit-box;
+    // -webkit-line-clamp: 1;
+    // -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .addtxt {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  span {
+    color: #bfbfbf;
+  }
+
+  img {
+    width: 0.25rem;
+    height: 0.25rem;
+  }
+}
+
+.address-set {
+  width: 100%;
+  font-size: 0.28rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+
+  .circleDiv {
+    display: flex;
+    height: 100%;
+    line-height: 1;
+    align-items: center;
+    margin-left: 0.24rem;
+
+    .circle {
+      border: 1px solid #f0f0f0;
+      width: 0.46rem;
+      height: 0.46rem;
+      border-radius: 50%;
+      margin-right: 0.16rem;
+    }
+
+    .selected {
+      width: 0.46rem;
+      height: 0.46rem;
+      background: url('./images/shopcart_gou.png') no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  .txt {
+    display: flex;
+    align-items: center;
+    margin-right: 0.16rem;
+
+    img {
+      width: 0.25rem;
+      height: 0.25rem;
+      margin-left: 0.04rem;
+    }
+  }
+}
+
+.address-btn {
+  margin: 0.5rem 0.2rem;
+
+  div {
+    // width: 100%;
+    border-radius: 0.08rem;
+    background: #05a5f9;
+    color: #fff;
+    font-size: 0.36rem;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+  }
+}

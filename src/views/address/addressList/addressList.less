@@ -1,0 +1,124 @@
+.address {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-bottom: 0.88rem;
+
+  .slide {
+    width: 100%;
+    position: relative;
+    height: 2rem;
+    border-bottom: 0.2rem solid #f0f0f0;
+  }
+
+  .contents_wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transition: right 0.3s ease-in-out;
+    z-index: 99;
+    // border: 0.02rem solid #ff0000;
+    background: #fff;
+    font-size: 0.28rem;
+    z-index: 55;
+    display: flex;
+    align-items: center;
+  }
+
+  .contents {
+    width: 100%;
+    margin: 0 0.2rem;
+    color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 33;
+
+    .con {
+      flex: 1;
+      padding-right: 0.43rem;
+    }
+
+    .info {
+      font-size: 0.3rem;
+      margin-bottom: 0.18rem;
+    }
+
+    .name {
+      margin-right: 0.2rem;
+    }
+
+    .edit {
+      flex-shrink: 1;
+    }
+
+    .ads {
+      font-size: 0.26rem;
+      color: #444444;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-height: 0.37rem;
+      word-break: break-all;
+    }
+
+    .edit {
+      display: inline-block;
+      width: 0.5rem;
+      height: 0.5rem;
+      background: url('./images/edit.png') left center no-repeat;
+      background-size: 0.38rem 0.4rem;
+    }
+  }
+
+  .delete {
+    height: 100%;
+    text-align: center;
+    width: 1.2rem;
+    background: red;
+    line-height: 2rem;
+    position: absolute;
+    right: 0;
+    font-size: 0.28rem;
+    color: #fff;
+    z-index: 44;
+  }
+
+  .toslide {
+    left: -0.8rem;
+  }
+
+  .select {
+    width: 0.46rem;
+    height: 0.46rem;
+    border-radius: 50%;
+    border: 0.02rem solid #c9c9c9;
+    box-sizing: border-box;
+    margin-right: 0.2rem;
+    flex-shrink: 1;
+  }
+
+  .select_active {
+    background: url('~@/static/images/shopcart_gou.png') no-repeat;
+    background-size: 100% 100%;
+    border: none;
+  }
+
+  .btn {
+    width: 100%;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    background: #ff4040;
+    // border-radius:0.1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 0.36rem;
+    color: #fff;
+    z-index: 99;
+  }
+}

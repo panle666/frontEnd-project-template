@@ -1,0 +1,100 @@
+// 0.5px 单边框
+
+.border-bottom-1px(@color:#eee) {
+  &:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid @color;
+    transform-origin: left bottom;
+    transform: scaleY(0.5);
+  }
+}
+
+.border-top-1px(@color:#eee) {
+  &:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid @color;
+    transform-origin: left top;
+    transform: scaleY(0.5);
+  }
+}
+
+.border-right-1px(@color:#eee) {
+  &:after {
+    content: ' ';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    border-right: 1px solid @color;
+    transform-origin: right top;
+    transform: scaleX(0.5);
+  }
+}
+
+.border-left-1px(@color:#eee) {
+  &:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    border-left: 1px solid @color;
+    transform-origin: left top;
+    transform: scaleX(0.5);
+  }
+}
+
+// 0.5px 全边框
+.border-1px(@radius:0px, @color: #eee) {
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 200%;
+    border: 1px solid @color;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    transform: scale(0.5, 0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: @radius*2;
+  }
+}
+
+// 文字超出隐藏
+.text-over(@line) when (@line=1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-over(@line) when (@line > 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @line;
+  -webkit-box-orient: vertical;
+}
+
+.h20 {
+  height: 0.2rem;
+  background: #f0f0f0;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width" />
+    <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico"> -->
+    <title>title</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .app-loading {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        margin-left: 10%;
+        transform: translate3d(-50%, -50%, 0);
+      }
+      .app-loading .dot {
+        width: 24px;
+        height: 24px;
+        background: #3ac;
+        border-radius: 100%;
+        display: inline-block;
+        animation: slide 1s infinite;
+      }
+      .app-loading .dot:nth-child(1) {
+        animation-delay: 0.1s;
+        background: #32aacc;
+      }
+      .app-loading .dot:nth-child(2) {
+        animation-delay: 0.2s;
+        background: #64aacc;
+      }
+      .app-loading .dot:nth-child(3) {
+        animation-delay: 0.3s;
+        background: #96aacc;
+      }
+      .app-loading .dot:nth-child(4) {
+        animation-delay: 0.4s;
+        background: #c8aacc;
+      }
+      .app-loading .dot:nth-child(5) {
+        animation-delay: 0.5s;
+        background: #faaacc;
+      }
+      @-moz-keyframes slide {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.3;
+          transform: scale(2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      @-webkit-keyframes slide {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.3;
+          transform: scale(2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      @-o-keyframes slide {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.3;
+          transform: scale(2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      @keyframes slide {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.3;
+          transform: scale(2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>
+      <strong>We're sorry but common doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- <div class="app-loading">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div> -->
+    <!-- built files will be auto injected -->
+  </body>
+</html>
