@@ -1,0 +1,13 @@
+{
+  // https://v3.nuxtjs.org/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+  // "compilerOptions": {
+  //   "jsx": "preserve"
+  // }
+  "compilerOptions": {
+    // ...
+    "types": [
+      "naive-ui/volar"
+    ]
+  }
+}
